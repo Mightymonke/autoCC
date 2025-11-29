@@ -85,10 +85,11 @@ Game.registerMod("myAutobuy", {
                 } catch (err) {
                     console.error("myAutobuy: loop error", err);
                 }
-            }, 300);
+            }, 50);
 
             // Expose a stop function for debugging (in console: myAutobuy_stop())
             window.myAutobuy_stop = () => { clearInterval(loop); console.log("myAutobuy: stopped"); };
         }
     }
 });
+
